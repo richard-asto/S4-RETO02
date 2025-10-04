@@ -1,0 +1,84 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background-color: hsl(233, 47%, 7%);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Card */
+.card {
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 475px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Imagen */
+.card-image {
+    position: relative;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(100%);
+}
+
+
+/* Contenido */
+.card-content {
+    padding: 30px;
+    text-align: center;
+}
+
+.title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.accent {
+    color: hsl(277, 64%, 61%);
+}
+
+.description {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+/* Stats */
+.stats {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.stat h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.stat p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: hsla(0, 0%, 100%, 0.6);
+}
